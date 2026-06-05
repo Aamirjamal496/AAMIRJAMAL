@@ -1,0 +1,20 @@
+[
+    {
+        "id": 31,
+        "project_name": "PortFolio website",
+        "project_link": "https://linkedin.com",
+        "description": "dummy text",
+        "technologies": "Laravel",
+        "created_at": "2026-06-03T19:38:50.000000Z",
+        "updated_at": "2026-06-03T19:38:50.000000Z",
+        "projectimages": [
+            {
+                "id": 5,
+                "project_id": 31,
+                "images": "Project_Images/Z73lDXXZaCZCNKfmNnsfAzqr4EJpWZgWVXW2zTjM.png",
+                "created_at": "2026-06-03T19:38:50.000000Z",
+                "updated_at": "2026-06-03T19:38:50.000000Z"
+            }
+        ]
+    }
+]
