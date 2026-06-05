@@ -18,34 +18,34 @@
 
             <!-- Admin Panel Toggle -->
             @auth
-                <div class="flex items-center space-x-4">
-                    <div x-data="{ open: false }" @click.outside="open = false" class="relative">
-                        <button @click="open = !open" class="p-2 rounded-lg hover:bg-purple-600/50 transition-all duration-200">
-                            <i class="fas fa-cog text-xl"></i>
-                        </button>
-                        <div x-show="open" x-transition class="absolute right-0 mt-2 w-64 bg-black/95 border border-purple-500/50 rounded-xl shadow-2xl p-4 z-50">
-                            <h3 class="font-bold mb-4 text-purple-400">Admin Panel</h3>
-                            <a href="/dashboard/profile" class="block w-full text-left px-4 py-2 hover:bg-purple-600/50 rounded-lg mb-2">
-                                <i class="fas fa-tachometer-alt mr-2"></i>Dashboard
-                            </a>
-                            <a href="/dashboard/skills" class="block w-full text-left px-4 py-2 hover:bg-purple-600/50 rounded-lg mb-2">
-                                <i class="fas fa-star mr-2"></i>Manage Skills
-                            </a>
-                            <a href="/dashboard/projects" class="block w-full text-left px-4 py-2 hover:bg-purple-600/50 rounded-lg mb-2">
-                                <i class="fas fa-project-diagram mr-2"></i>Manage Projects
-                            </a>
-                            <a href="/dashboard/experience" class="block w-full text-left px-4 py-2 hover:bg-purple-600/50 rounded-lg">
-                                <i class="fas fa-briefcase mr-2"></i>Manage Experience
-                            </a>
-                        </div>
+            <div class="flex items-center space-x-4">
+                <div x-data="{ open: false }" @click.outside="open = false" class="relative">
+                    <button @click="open = !open" class="p-2 rounded-lg hover:bg-purple-600/50 transition-all duration-200">
+                        <i class="fas fa-cog text-xl"></i>
+                    </button>
+                    <div x-show="open" x-transition class="absolute right-0 mt-2 w-64 bg-black/95 border border-purple-500/50 rounded-xl shadow-2xl p-4 z-50">
+                        <h3 class="font-bold mb-4 text-purple-400">Admin Panel</h3>
+                        <a href="/dashboard/profile" class="block w-full text-left px-4 py-2 hover:bg-purple-600/50 rounded-lg mb-2">
+                            <i class="fas fa-tachometer-alt mr-2"></i>Dashboard
+                        </a>
+                        <a href="/dashboard/skills" class="block w-full text-left px-4 py-2 hover:bg-purple-600/50 rounded-lg mb-2">
+                            <i class="fas fa-star mr-2"></i>Manage Skills
+                        </a>
+                        <a href="/dashboard/projects" class="block w-full text-left px-4 py-2 hover:bg-purple-600/50 rounded-lg mb-2">
+                            <i class="fas fa-project-diagram mr-2"></i>Manage Projects
+                        </a>
+                        <a href="/dashboard/experience" class="block w-full text-left px-4 py-2 hover:bg-purple-600/50 rounded-lg">
+                            <i class="fas fa-briefcase mr-2"></i>Manage Experience
+                        </a>
                     </div>
-                    <form method="POST" action="#" class="inline">
-                        @csrf
-                        <button type="submit" class="p-2 rounded-lg hover:bg-red-600/50 transition-all duration-200">
-                            <i class="fas fa-sign-out-alt"></i>
-                        </button>
-                    </form>
                 </div>
+                <form action="/logout" method="POST" class="inline">
+                    @csrf
+                    <button type="submit" class="p-2 rounded-lg hover:bg-red-600/50 transition-all duration-200">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </button>
+                </form>
+            </div>
             @endauth
 
             <!-- Mobile menu button -->
@@ -70,18 +70,17 @@
     </div>
 </nav>
 <style>
-    .navbg{
+    .navbg {
         background: #8a2be229;
     }
 </style>
 <script>
     function myFunction() {
-  var x = document.getElementById("mobile-menu");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-
+        var x = document.getElementById("mobile-menu");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
 </script>

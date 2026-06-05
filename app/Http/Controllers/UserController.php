@@ -26,6 +26,12 @@ class UserController extends Controller
             "credentials" => "Sorry, Invalid Credentials",
         ]);
     }
+    public function logout(Request $request)
+    {
+        Auth::logout();
+        $request->session()->flash("success", "Logout Successfully");
+        return redirect()->to("/admin");
+    }
     public function Profile()
     {
         return view('admin.profile');

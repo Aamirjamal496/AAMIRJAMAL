@@ -43,6 +43,7 @@ Route::middleware(["auth"])->group([function () {
     // Route::view("/dashboard/skills","admin.skillstab")->name("Skills");
     Route::get("/dashboard/skills", [SkillController::class, "indexSkills"])->name("Skills");
     Route::post("/Addskill", [SkillController::class, "addSkill"]);
+    Route::delete("/delete-skill/{id}", [SkillController::class, "deleteskill"]);
 
     // User Routess
     Route::put("/edit-pass", [UserController::class, "EditPassword"]);
@@ -76,6 +77,7 @@ Route::post('/send-message', [MessageController::class, 'send']);
 // }]);
 Route::view("/admin", "admin.login")->name('login');
 Route::post('/login', [UserController::class, 'login']);
+Route::post('/logout', [UserController::class, 'logout']);
 
 // Auth Routes
 

@@ -2,88 +2,55 @@
 @section('title','Skills')
 @section('content')
 <!-- Skills Section -->
-<section id="skills" class="py-20 px-4 bg-black/40">
+<section id="skills" class="py-50 px-4 bg-black/40">
     <div class="max-w-7xl mx-auto">
 
-        <div class="text-center mb-20" data-aos="fade-up">
-            <p class="text-purple-400 uppercase tracking-widest font-semibold mb-4">
+        <!-- Heading -->
+        <div class="text-center mb-16" data-aos="fade-up">
+            <p class="text-purple-400 uppercase tracking-[0.3em] font-semibold mb-4">
                 My Skills
             </p>
 
-            <h2 class="text-5xl font-black">
+            <h2 class="text-4xl md:text-5xl font-black">
                 Technologies I Use
             </h2>
+
+            <p class="text-gray-400 mt-4 max-w-2xl mx-auto">
+                Technologies, frameworks and tools I use to build modern web applications.
+            </p>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-10">
-            @foreach($skills as $skill)
-            <!-- Left -->
-            <div class="space-y-6">
+        @if(count($skills) < 1)
 
-                <div>
-                    <div class="flex justify-between mb-2">
-                        <span>{{$skill->name}}</span>
-                        <span>{{$skill->percentage}}</span>
-                    </div>
+            <div class="text-center">
+            <span class="text-red-500">
+                No Skills Found
+            </span>
+    </div>
 
-                     <div class="h-3 bg-gray-700 rounded-full overflow-hidden">
-                        <div class="skill-bar h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"
-                            data-width="{{$skill->percentage}}%"></div>
-                    </div>
-                </div>
+    @else
 
-                <!-- <div>
-                    <div class="flex justify-between mb-2">
-                        <span>JavaScript</span>
-                        <span>90%</span>
-                    </div>
+    <!-- Skills Cloud -->
+    <div class="flex flex-wrap justify-center gap-3 md:gap-4">
 
-                    <div class="h-3 bg-gray-700 rounded-full overflow-hidden">
-                        <div class="skill-bar h-full bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full"
-                            data-width="90%"></div>
-                    </div>
-                </div> -->
+        @foreach($skills as $skill)
 
-                <!-- <div>
-                    <div class="flex justify-between mb-2">
-                        <span>React JS</span>
-                        <span>85%</span>
-                    </div>
+        <div
+            class="group flex items-center gap-3 px-4 py-2.5 rounded-full bg-white/5 border border-white/10 hover:border-purple-500/40 hover:bg-purple-500/10 transition-all duration-300">
 
-                    <div class="h-3 bg-gray-700 rounded-full overflow-hidden">
-                        <div class="skill-bar h-full bg-gradient-to-r from-green-500 to-emerald-500 rounded-full"
-                            data-width="85%"></div>
-                    </div>
-                </div> -->
+            <i class="fa-brands {{$skill->iconclass}} text-sm md:text-base "></i>
 
-            </div>
+            <span class="text-sm md:text-base font-medium">
+                {{$skill->name}}
+            </span>
 
-            <!-- Right -->
-            <div class="grid grid-cols-2 gap-6">
-
-                <div class="bg-white/5 border border-white/10 rounded-3xl p-8 text-center hover:-translate-y-2 transition duration-300">
-                    <i class="fa-brands {{$skill->iconclass}} text-5xl text-red-500 mb-4"></i>
-                    <h4 class="font-bold text-xl">{{$skill->name}}</h4>
-                </div>
-
-                <!-- <div class="bg-white/5 border border-white/10 rounded-3xl p-8 text-center hover:-translate-y-2 transition duration-300">
-                    <i class="fa-brands fa-react text-5xl text-cyan-400 mb-4"></i>
-                    <h4 class="font-bold text-xl">React</h4>
-                </div>
-
-                <div class="bg-white/5 border border-white/10 rounded-3xl p-8 text-center hover:-translate-y-2 transition duration-300">
-                    <i class="fa-brands fa-js text-5xl text-yellow-400 mb-4"></i>
-                    <h4 class="font-bold text-xl">JavaScript</h4>
-                </div>
-
-                <div class="bg-white/5 border border-white/10 rounded-3xl p-8 text-center hover:-translate-y-2 transition duration-300">
-                    <i class="fa-solid fa-database text-5xl text-purple-400 mb-4"></i>
-                    <h4 class="font-bold text-xl">MySQL</h4>
-                </div> -->
-
-            </div>
-            @endforeach
         </div>
+
+        @endforeach
+
+    </div>
+
+    @endif
 
     </div>
 </section>
@@ -93,21 +60,21 @@
 const skillBars = document.querySelectorAll('.skill-bar');
 
 const skillsObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if(entry.isIntersecting){
-            const bars = entry.target.querySelectorAll('.skill-bar');
+entries.forEach(entry => {
+if(entry.isIntersecting){
+const bars = entry.target.querySelectorAll('.skill-bar');
 
-            bars.forEach(bar => {
-                bar.style.width = bar.dataset.width;
-            });
-        }
-    });
+bars.forEach(bar => {
+bar.style.width = bar.dataset.width;
+});
+}
+});
 });
 
 const skillsSection = document.querySelector('#skills');
 
 if(skillsSection){
-    skillsObserver.observe(skillsSection);
+skillsObserver.observe(skillsSection);
 }
 
 @endpush

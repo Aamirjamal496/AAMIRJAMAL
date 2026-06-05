@@ -1,19 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.css" rel="stylesheet">
-    <title>Admin Login</title>
-</head>
-<body >
-    <div class="min-h-screen flex items-center justify-center px-4 py-10 overflow-hidden relative bg-purple-600/30">
+@extends('layouts.app')
+@section('title','Login')
+@section('content')
+
+<div class="min-h-screen flex items-center justify-center px-4 py-10 overflow-hidden relative bg-purple-600/30">
+    @if(session()->has("success"))
+
+    @elseif(session()->has("failed"))
+    @endif
 
     <!-- Background Glow -->
-    <div class="absolute top-0 left-0 w-72 h-72 bg-purple-600/20 blur-3xl rounded-full"></div>
+    <div class="absolute top-0 left-0 w-72 h-72 bg-purple-600/20 blur-3xl rounded-full">
+    </div>
     <div class="absolute bottom-0 right-0 w-72 h-72 bg-pink-600/20 blur-3xl rounded-full"></div>
 
     <!-- Login Card -->
@@ -54,7 +51,7 @@
 
         <!-- Form -->
         <form action='/login' class="space-y-5" method="POST">
-                @csrf
+            @csrf
             <!-- Email -->
             <div>
 
@@ -158,27 +155,71 @@
 
 </div>
 
-</body>
+
+@endsection
+@push('scripts')
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script> -->
 <script>
-    const togglePassword = document.getElementById('togglePassword');
-    const passwordInput = document.querySelector('input[type=\"password\"]');
-        togglePassword.addEventListener('click', () => {
+    <!-- Scripts 
+    -->
+    const
+    togglePassword
+    =
+    document.getElementById('togglePassword');
+    const
+    passwordInput
+    =
+    document.querySelector('input[type=\"password\"]');
+    togglePassword.addEventListener('click',
+    ()
+    =>
+    {
+    if
+    (passwordInput.type
+    ===
+    'password')
+    {
+    passwordInput.type
+    =
+    'text';
+    togglePassword.innerHTML
+    =
+    '
+<i class=\"fa-solid fa-eye-slash text-gray-400\"></i>';
 
-            if(passwordInput.type === 'password'){
+} else {
 
-                passwordInput.type = 'text';
-                togglePassword.innerHTML =
-                    '<i class=\"fa-solid fa-eye-slash text-gray-400\"></i>';
+passwordInput.type = 'password';
+togglePassword.innerHTML =
+'<i class=\"fa-solid fa-eye text-gray-400\"></i>';
 
-            }else{
+}
 
-                passwordInput.type = 'password';
-                togglePassword.innerHTML =
-                    '<i class=\"fa-solid fa-eye text-gray-400\"></i>';
+});
+// Toast notifications
+if(session('success'))
+Toastify({
+text: "{{ session('success') }}",
+duration: 4000,
+gravity: "top",
+position: "right",
+backgroundColor: "#10b981",
+className: "font-semibold"
+}).showToast();
 
-            }
 
-        });
-
+if(session('failed'))
+Toastify({
+text: "{{ session('failed') }}",
+duration: 4000,
+gravity: "top",
+position: "right",
+backgroundColor: "#ef4444",
+className: "font-semibold"
+}).showToast();
 </script>
-</html>
+
+@endpush

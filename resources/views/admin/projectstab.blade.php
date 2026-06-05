@@ -181,7 +181,7 @@
                                 @method('DELETE')
 
                                 <button
-                                    onclick="return confirm('Are you sure you want to delete this project?')"
+                                    onclick="confirm('Are you sure you want to delete this project?')"
                                     class="w-9 h-9 rounded-lg bg-red-500/20 hover:bg-red-500/30 transition flex items-center justify-center">
                                     <i class="fa-solid fa-trash text-red-400"></i>
                                 </button>

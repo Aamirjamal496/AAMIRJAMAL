@@ -24,14 +24,14 @@
                 <p class="text-purple-400 font-semibold uppercase tracking-widest mb-3">
                     About Me
                 </p>
-                
+
                 <h2 class="text-5xl font-black leading-tight">
                     {{$user->profession}}
                 </h2>
             </div>
 
             <p class="text-gray-300 text-lg leading-relaxed">
-               {{$user->about}}
+                {{$user->about}}
             </p>
 
             <div class="grid grid-cols-2 gap-6">
@@ -40,7 +40,7 @@
                     <i class="fa-solid fa-code text-3xl text-purple-400 mb-4"></i>
                     <h4 class="font-bold text-xl mb-2">Frontend</h4>
                     <p class="text-gray-400 text-sm">
-                        Tailwind, Bootstrap, JavaScript, React
+                        Tailwind, Bootstrap, JavaScript, Laravel Blade, React
                     </p>
                 </div>
 
@@ -48,7 +48,7 @@
                     <i class="fa-solid fa-server text-3xl text-pink-400 mb-4"></i>
                     <h4 class="font-bold text-xl mb-2">Backend</h4>
                     <p class="text-gray-400 text-sm">
-                        Laravel, PHP, APIs, MySQL
+                        Laravel, APIs, MySQL
                     </p>
                 </div>
 
