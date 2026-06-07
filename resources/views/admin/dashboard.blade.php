@@ -20,7 +20,7 @@
         </div>
 
         <!-- Stats -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-14">
+        <!-- <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-14">
 
             <div class="bg-white/5 border border-purple-500/20 rounded-2xl p-8 backdrop-blur-lg hover:-translate-y-2 transition duration-300">
                 <div class="flex justify-between items-center mb-6">
@@ -74,7 +74,7 @@
                 </div>
             </div>
 
-        </div>
+        </div> -->
         <!-- Mobile Menu Button -->
         <div class="lg:hidden mb-6">
 
@@ -89,8 +89,6 @@
 
         <!-- Dashboard Tabs -->
         <div class="flex gap-6 relative">
-
-            <!-- Sidebar -->
             <!-- Sidebar -->
             <div id="sidebar"
                 class="fixed lg:static top-0 left-[-100%] lg:left-0 z-50 w-72 lg:w-64 h-screen lg:h-auto navbg lg:bg-white/5 border-r lg:border border-white/10 rounded-none lg:rounded-2xl p-5 backdrop-blur-xl transition-all duration-300 overflow-y-auto">
@@ -114,45 +112,54 @@
                 <ul class="space-y-2">
 
                     <li>
-                        <a href="/dashboard/profile" class="tab-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 {{request()->routeIs('/dashboard/profile')?'active-tab':''}}">
-
+                        <!-- Profile Tab: Gradient is now entirely dynamic based on the URL -->
+                        <a href="/dashboard/profile"
+                            class="tab-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl transition 
+           {{ request()->is('dashboard/profile') ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white' : 'hover:bg-white/10' }}">
                             <i class="fa-solid fa-user"></i>
                             <span>Profile</span>
                         </a>
                     </li>
 
                     <li>
-                        <a href="/dashboard/skills" class="tab-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10 transition {{request()->routeIs('/dashboard/skills')?'active-tab':''}}">
+                        <!-- Skills Tab -->
+                        <a href="/dashboard/skills"
+                            class="tab-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl transition 
+           {{ request()->is('dashboard/skills*') ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white' : 'hover:bg-white/10' }}">
                             <i class="fa-solid fa-code"></i>
                             <span>Skills</span>
                         </a>
                     </li>
 
                     <li>
-                        <a href="/dashboard/projects" class="tab-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10 transition {{request()->routeIs('/dashboard/projects')?'active-tab':''}}">
+                        <!-- Projects Tab -->
+                        <a href="/dashboard/projects"
+                            class="tab-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl transition 
+           {{ request()->is('dashboard/projects*') ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white' : 'hover:bg-white/10' }}">
                             <i class="fa-solid fa-diagram-project"></i>
                             <span>Projects</span>
                         </a>
                     </li>
 
                     <li>
-                        <a href="/dashboard/experience" class="tab-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10 transition {{request()->routeIs('/dashboard/experience')?'active-tab':''}}">
-
+                        <!-- Experience Tab -->
+                        <a href="/dashboard/experience"
+                            class="tab-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl transition 
+           {{ request()->is('dashboard/experience*') ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white' : 'hover:bg-white/10' }}">
                             <i class="fa-solid fa-briefcase"></i>
                             <span>Experience</span>
-
                         </a>
                     </li>
 
                     <li>
-                        <a href="/dashboard/messages" class="tab-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10 transition {{request()->routeIs('/dashboard/messages')?'active-tab':''}}">
-
+                        <!-- Messages Tab -->
+                        <a href="/dashboard/messages"
+                            class="tab-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl transition 
+           {{ request()->is('dashboard/messages*') ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white' : 'hover:bg-white/10' }}">
                             <i class="fa-solid fa-envelope"></i>
                             <span>Messages</span>
-
                         </a>
                     </li>
-
                     <!-- <li>
             <a href="/dashboard/settings" class="tab-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10 transition {{request()->routeIs('/dashboard/settings')?'active-tab':''}}">
 

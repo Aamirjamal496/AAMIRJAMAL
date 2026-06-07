@@ -4,7 +4,7 @@
 <!-- Profile -->
 <div class="tab-content active-content" id="profile">
 
-    <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-lg">
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-lg ">
 
         <div class="flex flex-col md:flex-row gap-10 items-center">
             <form action="/edit-pass" method="post">

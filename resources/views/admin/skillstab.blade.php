@@ -65,7 +65,7 @@
 
 <div class="tab-content" id="skills">
 
-    <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-lg">
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-lg h-140">
 
         <div class="flex justify-between items-center mb-10">
             <h2 class="text-3xl font-black">
@@ -87,9 +87,9 @@
                 </div>
 
                 <div class="flex gap-3">
-                    <button onclick="openModal('EditskillModal')" class="w-10 h-10 rounded-xl bg-blue-500/20">
+                    <!-- <button onclick="openModal('EditskillModal')" class="w-10 h-10 rounded-xl bg-blue-500/20">
                         <i class="fa-solid fa-pen text-blue-400"></i>
-                    </button>
+                    </button> -->
                     <form action="{{url('/delete-skill/'.$skill->id)}}" method="post">
                         @csrf
                         <input type="hidden" name="_method" value="DELETE" />
@@ -100,12 +100,12 @@
                 </div>
             </div>
             <!-- Edit Skill Modal -->
-            <div id="EditskillModal"
+            <!-- <div id="EditskillModal"
                 class="fixed inset-0 bg-black/70 backdrop-blur-sm hidden items-center justify-center z-50 px-4">
 
                 <div class="w-full max-w-lg bg-slate-900 border border-white/10 rounded-2xl p-6 relative">
 
-                    <button onclick="closeModal('skillModal')"
+                    <button onclick="closeModal('EditskillModal')"
                         class="absolute top-4 right-4 w-10 h-10 rounded-xl bg-red-500/20">
 
                         <i class="fa-solid fa-xmark text-red-400"></i>
@@ -116,16 +116,17 @@
                         Edit Skill
                     </h2>
 
-                    <form action="#" method="POST" class="space-y-5">
+                    <form action="{{url('/update-skill/'.$skill->id)}}" method="POST" class="space-y-5">
                         @csrf
+                        <input type="hidden" name="_method" value="PUT" />
                         <div>
                             <label class="text-sm text-gray-300 block mb-2">
                                 Skill Name
                             </label>
 
                             <input type="text" name="skillname"
-                                placeholder="Laravel"
-                                class="w-full px-5 py-3 rounded-xl bg-black/30 border border-white/10 focus:outline-none focus:border-purple-500">{{$skill->name}}</inpug>
+                                placeholder="Laravel" value="{{$skill->name}}"
+                                class="w-full px-5 py-3 rounded-xl bg-black/30 border border-white/10 focus:outline-none focus:border-purple-500" />
                         </div>
 
                         <div>
@@ -133,8 +134,8 @@
                                 Skill Percentage
                             </label>
 
-                            <input type="range" min="0" max="100" name="skillproficiency"
-                                class="w-full accent-purple-500">{{$skill->percentage}}</input>
+                            <input type="range" min="0" max="100" name="skillproficiency" value="{{$skill->percentage}}"
+                                class="w-full accent-purple-500" />
                         </div>
 
                         <div>
@@ -143,8 +144,8 @@
                             </label>
 
                             <input type="text" name="iconclass"
-                                placeholder="fa-brands fa-laravel"
-                                class="w-full px-5 py-3 rounded-xl bg-black/30 border border-white/10 focus:outline-none focus:border-purple-500">{{$skill->iconclass}}</input>
+                                placeholder="fa-brands fa-laravel" value="{{$skill->iconclass}}"
+                                class="w-full px-5 py-3 rounded-xl bg-black/30 border border-white/10 focus:outline-none focus:border-purple-500" />
                         </div>
 
                         <button
@@ -156,28 +157,9 @@
 
                 </div>
 
-            </div>
+            </div> -->
             @endforeach
-
-            <!-- <div class="bg-black/30 border border-white/10 rounded-2xl p-6 flex justify-between items-center">
-                                <div>
-                                    <h3 class="font-bold text-xl">React JS</h3>
-                                    <p class="text-gray-400">90%</p>
-                                </div>
-
-                                <div class="flex gap-3">
-                                    <button class="w-10 h-10 rounded-xl bg-blue-500/20">
-                                        <i class="fa-solid fa-pen text-blue-400"></i>
-                                    </button>
-
-                                    <button class="w-10 h-10 rounded-xl bg-red-500/20">
-                                        <i class="fa-solid fa-trash text-red-400"></i>
-                                    </button>
-                                </div>
-                            </div> -->
         </div>
-
     </div>
-
 </div>
 @endsection

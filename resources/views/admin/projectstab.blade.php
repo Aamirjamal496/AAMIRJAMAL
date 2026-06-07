@@ -102,7 +102,7 @@
 <!-- Projects Section -->
 <div class="tab-content" id="projects">
 
-    <div class="bg-white/5 border border-white/10 rounded-2xl p-4 md:p-6 backdrop-blur-lg">
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-4 md:p-6 backdrop-blur-lg h-150">
 
         <!-- Header -->
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
@@ -168,10 +168,10 @@
                         <div class="flex gap-2 shrink-0">
 
                             <!-- Edit Button -->
-                            <button
+                            <!-- <button
                                 class="w-9 h-9 rounded-lg bg-blue-500/20 hover:bg-blue-500/30 transition flex items-center justify-center">
                                 <i class="fa-solid fa-pen text-blue-400"></i>
-                            </button>
+                            </button> -->
 
                             <!-- Delete Button -->
                             <form action="{{ url('/delete-project/'.$project->id) }}"

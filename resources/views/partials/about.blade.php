@@ -13,7 +13,7 @@
                 class=" z-10 rounded-3xl shadow-2xl border border-purple-500/20 h-96" alt='{{$user->name}}'>
 
             <div class="absolute  -bottom-6 -right-6 bg-gradient-to-r from-purple-600 to-pink-600 p-6 rounded-2xl shadow-2xl">
-                <h3 class="text-3xl font-bold">3+</h3>
+                <h3 class="text-3xl font-bold">1</h3>
                 <p class="text-sm text-gray-200">Years Experience</p>
             </div>
         </div>

@@ -28,7 +28,7 @@
 
                     <div>
                         <p class="text-gray-400">Email</p>
-                        <h4 class="font-semibold">amirjamal@dev.com</h4>
+                        <h4 class="font-semibold">amirjamal496@gmail.com</h4>
                     </div>
                 </div>
 
@@ -39,7 +39,7 @@
 
                     <div>
                         <p class="text-gray-400">Phone</p>
-                        <h4 class="font-semibold">+92 300 0000000</h4>
+                        <h4 class="font-semibold">+92 317 1684387</h4>
                     </div>
                 </div>
 

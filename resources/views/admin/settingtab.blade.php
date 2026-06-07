@@ -4,7 +4,7 @@
 <!-- Settings -->
 <div class="tab-content " id="settings">
 
-    <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-lg">
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-lg h-140">
 
         <form action="{{url('/edit-pass/'.)}}" method="post">
             <h2 class="text-3xl font-black mb-10">

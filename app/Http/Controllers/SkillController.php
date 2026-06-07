@@ -40,4 +40,18 @@ class SkillController extends Controller
             return redirect()->back();
         }
     }
+    public function EditSkill(Request $request, $id)
+    {
+        $skill = Skills::find($id)->first();
+        return $skill;
+        $skill->name = $request->skillname;
+        $skill->percentage = $request->skillproficiency;
+        $skill->iconclass = $request->iconclass;
+        if ($skill->save()) {
+            $request->session()->flash('success', 'Skill Updated');
+            return redirect()->back();
+        }
+        $request->session()->flash('failed', 'Skill Updation Failed');
+        return redirect()->back();
+    }
 }

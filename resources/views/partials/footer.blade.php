@@ -22,18 +22,18 @@
                 </p>
                 <!-- Social Links -->
                 <div class="flex space-x-6">
-                    <a href="#" class="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center hover:bg-white/20 hover:scale-110 transition-all duration-300 border border-white/20" data-aos="zoom-in" data-aos-delay="100">
+                    <a href="https://github.com/Aamirjamal496" class="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center hover:bg-white/20 hover:scale-110 transition-all duration-300 border border-white/20" data-aos="zoom-in" data-aos-delay="100">
                         <i class="fab fa-github text-xl"></i>
                     </a>
-                    <a href="#" class="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center hover:bg-white/20 hover:scale-110 transition-all duration-300 border border-white/20" data-aos="zoom-in" data-aos-delay="200">
+                    <a href="https://linkedin.com/in/aamir-jamal-aj-🌐-84183622b" class="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center hover:bg-white/20 hover:scale-110 transition-all duration-300 border border-white/20" data-aos="zoom-in" data-aos-delay="200">
                         <i class="fab fa-linkedin text-xl"></i>
                     </a>
-                    <a href="#" class="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center hover:bg-white/20 hover:scale-110 transition-all duration-300 border border-white/20" data-aos="zoom-in" data-aos-delay="300">
+                    <!-- <a href="#" class="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center hover:bg-white/20 hover:scale-110 transition-all duration-300 border border-white/20" data-aos="zoom-in" data-aos-delay="300">
                         <i class="fab fa-twitter text-xl"></i>
                     </a>
                     <a href="#" class="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center hover:bg-white/20 hover:scale-110 transition-all duration-300 border border-white/20" data-aos="zoom-in" data-aos-delay="400">
                         <i class="fas fa-envelope text-xl"></i>
-                    </a>
+                    </a> -->
                 </div>
             </div>
 
@@ -42,21 +42,21 @@
                 <h3 class="text-xl font-bold text-white mb-8 border-b border-purple-500/30 pb-2">Quick Links</h3>
                 <ul class="space-y-4">
                     <li><a href="/home" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 flex items-center gap-2 group">
-                        <div class="w-2 h-2 bg-purple-400 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
-                        Home
-                    </a></li>
+                            <div class="w-2 h-2 bg-purple-400 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                            Home
+                        </a></li>
                     <li><a href="/about" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 flex items-center gap-2 group">
-                        <div class="w-2 h-2 bg-purple-400 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
-                        About
-                    </a></li>
+                            <div class="w-2 h-2 bg-purple-400 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                            About
+                        </a></li>
                     <li><a href="/skills" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 flex items-center gap-2 group">
-                        <div class="w-2 h-2 bg-purple-400 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
-                        Skills
-                    </a></li>
+                            <div class="w-2 h-2 bg-purple-400 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                            Skills
+                        </a></li>
                     <li><a href="/projects" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 flex items-center gap-2 group">
-                        <div class="w-2 h-2 bg-purple-400 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
-                        Projects
-                    </a></li>
+                            <div class="w-2 h-2 bg-purple-400 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                            Projects
+                        </a></li>
                 </ul>
             </div>
 
@@ -65,21 +65,21 @@
                 <h3 class="text-xl font-bold text-white mb-8 border-b border-pink-500/30 pb-2">Services</h3>
                 <ul class="space-y-4">
                     <li><a href="#" class="text-gray-400 hover:text-pink-400 transition-colors duration-300 flex items-center gap-2 group">
-                        <div class="w-2 h-2 bg-pink-400 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
-                        Web Development
-                    </a></li>
+                            <div class="w-2 h-2 bg-pink-400 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                            Web Development
+                        </a></li>
                     <li><a href="#" class="text-gray-400 hover:text-pink-400 transition-colors duration-300 flex items-center gap-2 group">
-                        <div class="w-2 h-2 bg-pink-400 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
-                        Mobile Apps
-                    </a></li>
+                            <div class="w-2 h-2 bg-pink-400 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                            API Development
+                        </a></li>
                     <li><a href="#" class="text-gray-400 hover:text-pink-400 transition-colors duration-300 flex items-center gap-2 group">
-                        <div class="w-2 h-2 bg-pink-400 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
-                        UI/UX Design
-                    </a></li>
+                            <div class="w-2 h-2 bg-pink-400 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                            Bug Bounting
+                        </a></li>
                     <li><a href="#" class="text-gray-400 hover:text-pink-400 transition-colors duration-300 flex items-center gap-2 group">
-                        <div class="w-2 h-2 bg-pink-400 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
-                        Consulting
-                    </a></li>
+                            <div class="w-2 h-2 bg-pink-400 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                            Consulting
+                        </a></li>
                 </ul>
             </div>
 
@@ -103,7 +103,7 @@
                         <div>
                             <p class="text-gray-400 font-medium">Email</p>
                             <p class="text-sm text-gray-500 hover:text-green-400 transition-colors duration-300 cursor-pointer">
-                                amirjamal@dev.com
+                                amirjamal496@gmail.com
                             </p>
                         </div>
                     </div>
@@ -113,7 +113,7 @@
                         </div>
                         <div>
                             <p class="text-gray-400 font-medium">Phone</p>
-                            <p class="text-sm text-gray-500">+1 (555) 123-4567</p>
+                            <p class="text-sm text-gray-500">+923171684387</p>
                         </div>
                     </div>
                 </div>
@@ -131,8 +131,8 @@
                             <p class="text-gray-500 text-sm">Get the latest updates</p>
                         </div>
                         <div class="flex-1 relative">
-                            <input type="email" placeholder="Enter your email" 
-                                   class="w-full px-4 py-3 bg-black/50 border border-white/20 rounded-2xl text-white placeholder-gray-500 focus:outline-none focus:border-purple-400 transition-all duration-300">
+                            <input type="email" placeholder="Enter your email"
+                                class="w-full px-4 py-3 bg-black/50 border border-white/20 rounded-2xl text-white placeholder-gray-500 focus:outline-none focus:border-purple-400 transition-all duration-300">
                             <button class="absolute right-2 top-1/2 -translate-y-1/2 px-6 py-2 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl font-semibold hover:shadow-2xl hover:shadow-purple-500/25 transition-all duration-300 whitespace-nowrap">
                                 Subscribe
                             </button>
@@ -143,7 +143,7 @@
                 <!-- Copyright -->
                 <div class="text-center md:text-right" data-aos="fade-up" data-aos-delay="200">
                     <p class="text-gray-500">
-                        © 2024 <span class="font-bold text-white">AamirJamal</span>. 
+                        © 2024 <span class="font-bold text-white">AamirJamal</span>.
                         Made with ❤️ using Laravel & Tailwind.
                     </p>
                 </div>
@@ -154,84 +154,99 @@
 
 @push('scripts')
 <script>
-// Floating shapes animation for footer
-function createFloatingShapes() {
-    const shapesContainer = document.getElementById('floating-shapes');
-    const shapes = ['circle', 'triangle', 'square', 'diamond'];
-    const colors = ['#9333ea', '#ec4899', '#06b6d4', '#10b981'];
+    // Floating shapes animation for footer
+    function createFloatingShapes() {
+        const shapesContainer = document.getElementById('floating-shapes');
+        const shapes = ['circle', 'triangle', 'square', 'diamond'];
+        const colors = ['#9333ea', '#ec4899', '#06b6d4', '#10b981'];
 
-    for (let i = 0; i < 12; i++) {
-        const shape = document.createElement('div');
-        shape.className = `floating-shape shape-${shapes[Math.floor(Math.random() * shapes.length)]}`;
-        shape.style.cssText = `
+        for (let i = 0; i < 12; i++) {
+            const shape = document.createElement('div');
+            shape.className = `floating-shape shape-${shapes[Math.floor(Math.random() * shapes.length)]}`;
+            shape.style.cssText = `
             left: ${Math.random() * 100}%;
             animation-delay: ${Math.random() * 10}s;
             animation-duration: ${10 + Math.random() * 10}s;
             background: ${colors[Math.floor(Math.random() * colors.length)]};
             opacity: 0.1;
         `;
-        shapesContainer.appendChild(shape);
+            shapesContainer.appendChild(shape);
+        }
     }
-}
 
-// Newsletter form submission (requires backend)
-document.addEventListener('DOMContentLoaded', () => {
-    createFloatingShapes();
-    
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
+    // Newsletter form submission (requires backend)
+    document.addEventListener('DOMContentLoaded', () => {
+        createFloatingShapes();
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
         });
     });
-});
 </script>
 
 <style>
-@keyframes float {
-    0%, 100% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-20px) rotate(180deg); }
-}
+    @keyframes float {
 
-.floating-shape {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    animation: float linear infinite;
-}
+        0%,
+        100% {
+            transform: translateY(0px) rotate(0deg);
+        }
 
-.shape-circle { border-radius: 50%; }
-.shape-triangle {
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 20px solid;
-}
+        50% {
+            transform: translateY(-20px) rotate(180deg);
+        }
+    }
 
-.shape-square { transform: rotate(45deg); }
-.shape-diamond {
-    transform: rotate(45deg);
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-}
+    .floating-shape {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        animation: float linear infinite;
+    }
 
-/* Custom scrollbar for footer */
-.footer::-webkit-scrollbar {
-    width: 8px;
-}
-.footer::-webkit-scrollbar-track {
-    background: rgba(255,255,255,0.1);
-}
-.footer::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, #9333ea, #ec4899);
-    border-radius: 4px;
-}
+    .shape-circle {
+        border-radius: 50%;
+    }
+
+    .shape-triangle {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 20px solid;
+    }
+
+    .shape-square {
+        transform: rotate(45deg);
+    }
+
+    .shape-diamond {
+        transform: rotate(45deg);
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
+
+    /* Custom scrollbar for footer */
+    .footer::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .footer::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .footer::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom, #9333ea, #ec4899);
+        border-radius: 4px;
+    }
 </style>
 @endpush

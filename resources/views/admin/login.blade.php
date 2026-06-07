@@ -99,7 +99,7 @@
             </div>
 
             <!-- Remember -->
-            <div class="flex items-center justify-between text-sm">
+            <!-- <div class="flex items-center justify-between text-sm">
 
                 <label class="flex items-center gap-2 text-gray-400 cursor-pointer">
 
@@ -117,7 +117,7 @@
 
                 </a>
 
-            </div>
+            </div> -->
 
             <!-- Login Button -->
             <button
@@ -158,10 +158,6 @@
 
 @endsection
 @push('scripts')
-
-<!-- <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script> -->
 <script>
     <!-- Scripts 
     -->
@@ -199,27 +195,6 @@ togglePassword.innerHTML =
 }
 
 });
-// Toast notifications
-if(session('success'))
-Toastify({
-text: "{{ session('success') }}",
-duration: 4000,
-gravity: "top",
-position: "right",
-backgroundColor: "#10b981",
-className: "font-semibold"
-}).showToast();
-
-
-if(session('failed'))
-Toastify({
-text: "{{ session('failed') }}",
-duration: 4000,
-gravity: "top",
-position: "right",
-backgroundColor: "#ef4444",
-className: "font-semibold"
-}).showToast();
 </script>
 
 @endpush

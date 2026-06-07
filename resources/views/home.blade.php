@@ -49,23 +49,23 @@
 
 <!-- Stats Section -->
 <section class="py-16 px-4 bg-black/50">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-8 text-center">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 text-center">
         <div data-aos="fade-up" data-aos-delay="100">
-            <div class="text-4xl font-bold text-purple-400 mb-2" data-target="50">0</div>
+            <div class="text-4xl font-bold text-purple-400 mb-2" data-target="5">0</div>
             <div class="text-gray-400">Projects</div>
         </div>
         <div data-aos="fade-up" data-aos-delay="200">
-            <div class="text-4xl font-bold text-pink-400 mb-2" data-target="3">0</div>
+            <div class="text-4xl font-bold text-pink-400 mb-2" data-target="1">0</div>
             <div class="text-gray-400">Years Exp</div>
         </div>
-        <div data-aos="fade-up" data-aos-delay="300">
+        <!-- <div data-aos="fade-up" data-aos-delay="300">
             <div class="text-4xl font-bold text-blue-400 mb-2" data-target="100">0</div>
             <div class="text-gray-400">Happy Clients</div>
-        </div>
-        <div data-aos="fade-up" data-aos-delay="400">
+        </div> -->
+        <!-- <div data-aos="fade-up" data-aos-delay="400">
             <div class="text-4xl font-bold text-green-400 mb-2" data-target="10">0</div>
             <div class="text-gray-400">Awards</div>
-        </div>
+        </div> -->
     </div>
 </section>
 @endsection

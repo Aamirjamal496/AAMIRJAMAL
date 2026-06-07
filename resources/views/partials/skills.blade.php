@@ -56,25 +56,26 @@
 </section>
 @endsection
 @push('scripts')
-// Skills Animation
-const skillBars = document.querySelectorAll('.skill-bar');
+<script>
+    // Skills Animation
+    const skillBars = document.querySelectorAll('.skill-bar');
 
-const skillsObserver = new IntersectionObserver((entries) => {
-entries.forEach(entry => {
-if(entry.isIntersecting){
-const bars = entry.target.querySelectorAll('.skill-bar');
+    const skillsObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const bars = entry.target.querySelectorAll('.skill-bar');
 
-bars.forEach(bar => {
-bar.style.width = bar.dataset.width;
-});
-}
-});
-});
+                bars.forEach(bar => {
+                    bar.style.width = bar.dataset.width;
+                });
+            }
+        });
+    });
 
-const skillsSection = document.querySelector('#skills');
+    const skillsSection = document.querySelector('#skills');
 
-if(skillsSection){
-skillsObserver.observe(skillsSection);
-}
-
+    if (skillsSection) {
+        skillsObserver.observe(skillsSection);
+    }
+</script>
 @endpush
